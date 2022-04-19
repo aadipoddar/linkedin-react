@@ -7,16 +7,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { login, logout, selectUser } from './features/userSlice'
 import Login from './Login'
 import { auth } from './firebase'
+import Widgets from './Widgets'
 
 function App() {
-
   const user = useSelector(selectUser)
   const dispatch = useDispatch()
 
   useEffect(() => {
     auth.onAuthStateChanged(userAuth => {
       if (userAuth) {
-        // user is logged in
         dispatch(login({
           email: userAuth.email,
           uid: userAuth.uid,
@@ -39,6 +38,7 @@ function App() {
         <div className='app__body'>
           <Sidebar />
           <Feed />
+          <Widgets />
         </div>
       )}
     </div>
