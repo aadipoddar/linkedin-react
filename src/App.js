@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Header from './Header'
 import Sidebar from './Sidebar'
@@ -26,7 +26,7 @@ function App() {
         dispatch(logout())
       }
     })
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='app'>
