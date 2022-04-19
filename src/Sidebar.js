@@ -17,8 +17,8 @@ function Sidebar() {
                     alt='Unspash Color Gradient'
                 />
                 <Avatar className='sidebar__avatar' />
-                <h2>Darton Hemerik</h2>
-                <h4>hemerikd@gmail.com</h4>
+                <h2>Aadi Poddar</h2>
+                <h4>aadipoddarmail@gmail.com</h4>
             </div>
             <div className='sidebar__stats'>
                 <div className='sidebar__stat'>
